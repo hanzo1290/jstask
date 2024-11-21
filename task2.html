@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            text-align: center;
+        }
+        .main
+        {
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            
+
+        }
+        .box1,.box2
+        {
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+        }
+        .box2
+        {
+            background-color: blue;
+           
+          
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main"id="boxy2">
+            <div class="box1">
+    
+            </div>
+            <div class="box2" id="box12" >
+    
+            </div>
+        </div>
+    </div>
+    <button id="change" onclick="clik()">change</button>
+    <script>
+        
+       boxn2 = document.getElementById(boxy2);
+       box123 = document.getElementById(box12);
+        function clik()
+        {
+            box123.innerhtml="hi"
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="currency" value="200">
+    <select name="" id="country" onchange="value1()">
+        <option>USA</option>
+        <option>UAE</option>
+        <option>CAN</option>
+        <option selected>INDIA</option>
+
+    </select>
+    <b id="display">hi</b>
+    <Script>
+         curren = document.getElementById('currency');
+         constan= curren;
+        contr = document.getElementById('country');
+        dis = document.getElementById('display');
+        console.log(curren , contr);
+        console.log(constan.value);
+      function value1()
+      {
+        curren.value =constan.value;
+       
+        
+        
+        if(contr.value=="USA")
+    {
+     
+        
+       dis.innerHTML =curren.value*83
+        
+       
+       
+
+    }
+     if(contr.value=="UAE")
+    {
+        dis.innerHTML =curren.value*23
+        
+
+    }
+     if(contr.value=="CAN")
+    {
+        dis.innerHTML= curren.value*82
+        
+
+    }
+    if(contr.value=="INDIA")
+    {
+        dis.innerHTML =curren.value*1
+     
+    }
+    
+      }  
+    
+
+
+      
+
+    </Script>
+</body>
+</html>
