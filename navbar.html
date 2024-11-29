@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar
+        {
+            background-color: olive;
+            padding: 10px;
+            
+        }
+        .navbar ul
+        {
+
+        }
+        .navbar ul li
+        {
+            font-size: 25px;
+            display: inline;
+            margin-left: 10px;
+        }
+        .men,.women
+        {
+            position: relative;
+        }
+        .menu li,.menu2 li
+        {
+            display: block!important;
+            font-size: 15px!important;
+
+        }
+        .menu,.menu2
+        {
+            display: flex;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            display: none;
+        }
+        .menu .image,.menu2 .image
+        {
+        width: 100px;
+        height: 70px;
+        }
+        .menu .image img, .menu2 .image img
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .mini
+        {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            display: none;
+        }
+        .box
+        {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li class="men" id="click men">Men's ware
+                <div class="menu" id="box1">
+                    <div class="image"><img src="watch.jpg" alt=""></div>
+                    <ul>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                    </ul>
+                    <ul>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="women" id="click wo">Women's ware
+                <div class="menu2" id="box2">
+                    
+                    <ul>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                    </ul>
+                    <ul>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                        <li>clothing</li>
+                    </ul>
+                    <div class="image"><img src="watch.jpg" alt=""></div>
+                </div>
+            </li>
+            <li class="box" id="codesshort">Short codes
+                <div class="mini" id="box3"><table border="2"><tr><td>web icon</td></tr><tr><td>typography</td></tr></table></div>
+            </li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <script>
+        
+         box = document.getElementById(box1);
+         console.log(box);
+    </script>
+</body>
+</html>

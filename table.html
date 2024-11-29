@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="3px solid black">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <td><a id="1"></a></td>
+            <td ><a id="2"></a></td>
+            <td ><a id="3"></a></td>
+        </tr>
+        <tr>
+            <td><a id="4"></a></td>
+            <td><a id="5"></a></td>
+            <td><a id="6"></a></td>
+        </tr>
+        <tr>
+            <td><a id="7"></a></td>
+            <td><a id="8"></a></td>
+            <td><a id="9"></a></td>
+        </tr>
+    </table>
+    
+    <script>
+     
+        arr=[
+        {name:"mohit",age:"20",course:"frnt"},
+        {name:"priyank",age:"19",course:"wd"},
+        {name:"Hiro",age:"22",course:"fullstacks"}
+        ]
+      
+        // console.log(document.getElementById(11));
+        
+        
+        for(i in arr)
+    {
+
+        
+     
+       
+        // if(key==2)
+        // {
+        //     do
+        // }
+        document.getElementById(1).innerHTML=(arr[i]["name"] +" ");
+
+       for( ++j in arr) 
+       {
+            document.getElementById(2).innerHTML=(arr[j]["age"] +" ");
+        for(2+k in arr)
+        {
+            document.getElementById(3).innerHTML=(arr[k]["course"]+" ");
+            document.write("<br>")
+        }
+       }
+         
+        
+       
+    //     if(key==2)
+    // {
+    //     document.getElementById(4).innerHTML=(arr[key]["name"] +" ");
+    //     document.getElementById(5).innerHTML=(arr[key]["age"] +" ");
+    //     document.getElementById(6).innerHTML=(arr[key]["course"]+" ");
+    //     document.write("<br>")
+
+    // }
+        
+        // document.write(arr[key]["name"] +" ");
+        // document.write(arr[key]["age"] +" ");
+        // document.write(arr[key]["course"]+" ");
+        // document.write("<br>")
+       
+    }
+   
+    </script>
+</body>
+</html>
